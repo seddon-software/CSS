@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<style type="text/css">
+div {
+    float: left;
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    color: yellow;
+    background-color: blue;
+    border-top: 5px solid #0022DD;
+    border-bottom: 5px solid #0022DD;
+    box-shadow:20px 20px 25px 10px #AABBFF;
+    font-size: 200%;
+}
+div:first-of-type {
+    border-left: 5px solid #0022DD;
+}
+div:last-of-type {
+    border-right: 5px solid #0022DD;
+}
+
+
+div {
+   -webkit-animation-name: example;
+   -webkit-animation-duration: 30s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 1s;             /* 0 is the default */
+   -webkit-animation-iteration-count: infinite;    /* 1 is the default */
+   -webkit-animation-direction: normal;  /* normal is the default */
+}
+
+@-webkit-keyframes example {
+  0% { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  10% { -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+  100% { -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+
+
+
+</style>
+</head>
+<body>
+    <div>N</div><div>H</div><div>&nbsp;</div>
+    <div>C</div><div>o</div><div>m</div><div>p</div><div>u</div><div>t</div><div>e</div><div>r</div><div>&nbsp;</div>
+    <div>S</div><div>o</div><div>l</div><div>u</div><div>t</div><div>i</div><div>o</div><div>n</div><div>s</div>
+</body>
+</html>
+

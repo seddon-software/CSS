@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>CSS</title>
+</head>
+
+
+<style type="text/css">
+body                  { background: white; }
+div                   { color: red; }
+div[draggable]        { color: blue; }
+div[draggable="true"] { color: green; }
+div:first-child       { color: brown; }
+div:last-child        { color: cyan; }
+div:empty             { color: gold; }
+</style>
+
+<body style="font-size: 250%">
+
+	<div>
+		<div>first child</div>
+		<div>middle child</div>
+		<div>last child</div>
+	</div>
+	<div>div</div>
+	<div draggable="false">div draggable="false"</div>
+	<div draggable="true">div draggable="true"</div>
+
+
+</body>
+</html>

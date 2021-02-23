@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>First Look At CSS</title>
+
+<style type="text/css">
+.question {
+	display: block;
+}
+
+.answer {
+	display: none;
+	font-style: italic;
+}
+</style>
+
+</head>
+<body>
+
+	<script language="Javascript">
+		var soltoggle = 0;
+
+		function togglesolution(bt, sid) {
+			var disp = [ "none", "block" ]
+			var labels = [ "show solution", "hide solution" ]
+			var sol = document.getElementById(sid)
+			if (sol) {
+				soltoggle++;
+				soltoggle %= 2;
+				sol.style.display = disp[soltoggle]
+				bt.value = labels[soltoggle]
+			}
+		}
+	</script>
+<body>
+	<div id="q1" class="question">
+		<h1>Question</h1>
+		<p>What is the question?</p>
+	</div>
+	<div id="a1" class="answer">
+		<p>Here is the answer</p>
+		<p>I don't know the question!</p>
+	</div>
+	<input name="show" type='button' value='show answer'
+		onclick='togglesolution(this, "a1")'>
+	<hr />
+</body>
+</html>

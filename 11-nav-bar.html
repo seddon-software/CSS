@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>CSS</title>
+</head>
+
+
+<style type="text/css">
+  body { background: white; }
+  ul   { list-style-type:none;
+         margin:0;
+         padding:0;
+       }
+  li   { display:inline;
+         float:left;
+         background:#FF6666;
+         border:1px solid blue;
+       }
+  li:hover { background:#444488;}
+  li a { 
+         color:white; 
+         display:block;
+         width:80px;
+       }
+  li a:link {text-decoration: none}
+  .start { position:absolute;}       
+</style>
+
+<!--  
+    page 1 link seems to be broken ...
+    ... to fix it add a nbsp after ul tag
+ -->
+<body style="font-size: 100%">
+	<ul>&nbsp;
+		<li><a href="pages/page1.html">page 1</a></li>
+		<li><a href="pages/page2.html">goto page 2</a></li>
+		<li><a href="pages/page3.html">page 3</a></li>
+		<li><a href="pages/page4.html">page 4</a></li>
+	</ul>
+	<div class="start">
+	<p><br>
+	This is the content<p>
+	<a href="#">home</a>
+	</div>
+</body>
+</html>

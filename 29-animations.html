@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>CSS animations: Example 1</title>
+  <style type="text/css">
+    .slider {
+      -moz-animation-duration: 10s;
+      -webkit-animation-duration: 10s;
+      -moz-animation-name: slidein;
+      -webkit-animation-name: slidein;
+      -moz-animation-delay: 5s;
+      -webkit-animation-delay: 5s;
+      -moz-animation-iteration-count: 3;
+      -webkit-animation-iteration-count: 3;
+    }
+    
+    @-moz-keyframes slidein {
+      from { margin-left:60%; color: red;  }
+      25%  { margin-left:30%; color: gold; }
+      50%  { margin-left:60%; color: red;  }
+      to   { margin-left:0%;  color: blue; }
+    }
+    
+    @-webkit-keyframes slidein {
+      from { margin-left:60%; color: red;  }
+      25%  { margin-left:30%; color: gold; }
+      50%  { margin-left:60%; color: red;  }
+      to   { margin-left:0%;  color: blue; }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="slider">Watch me move</h1>
+  <img class="slider" src="images/cat.jpg"></img>
+  <p>This example shows how to use CSS animations to make <code>H1</code> elements
+  move across the page.</p>
+  <p>This animation will start in 5 seconds time and repeat 3 times.</p>
+</body>
+</html>

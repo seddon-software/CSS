@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>CSS</title>
+
+<style type="text/css">
+div {
+	margin: 1em 0;
+	border: 1px solid;
+	width: 300px;
+}
+
+p {
+	border: 1px dotted;
+}
+
+div#one p {
+	display: block;
+	width: 6em;
+	text-align: center;
+}
+
+div#two p {
+	display: inline;
+	width: 6em;
+	text-align: center;
+}
+</style>
+
+</head>
+<body>
+	<div id="one">
+		Normal block level text...
+		<p>a block-level paragraph.</p>
+		and the rest of the DIV.
+	</div>
+	<div id="two">
+		Normal block level text...
+		<p>an inline paragraph.</p>
+		and the rest of the DIV.
+	</div>
+</body>
+</html>

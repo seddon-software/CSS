@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>CSS</title>
+
+<style type="text/css">
+body {
+	background: white;
+}
+
+div.window {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	border: outset gray 3px;
+}
+
+div.titlebar {
+	position: absolute;
+	top: 0px;
+	height: 18px;
+	width: 290px;
+	background-color: ActiveCaption;  /* system color */
+	border-bottom: groove black 2px;
+	padding: 3px 5px 2px 5px;
+	font: caption;
+}
+
+div.content {
+	position: absolute;
+	top: 25px;
+	height: 165px;
+	width: 290px;
+	padding: 5px;
+	overflow: auto;
+	background-color:  #ffffff;
+}
+</style>
+
+</head>
+<body>
+	<div class="window" style="left: 10px; top: 10px; z-index: 10">
+		<div class="titlebar">Test Window</div>
+		<div class="content">
+			a line</br>a line</br>a line</br> a line</br>a line</br>
+		</div>
+	</div>
+	<div class="window" style="left: 170px; top: 140px; z-index: 20">
+		<div class="titlebar">Another Window</div>
+		<div class="content"
+			style="background-color: #d0d0d0; font-weight: bold">
+			This is another window that should appear on top of the first one
+			because it has a higher
+			<tt>z-index</tt>
+			value.
+		</div>
+	</div>
+</body>
+</html>
